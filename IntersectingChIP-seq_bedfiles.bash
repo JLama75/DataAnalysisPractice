@@ -2,6 +2,16 @@
 
 #Intersecting EP300 and CTCF ChIP-seq peaks with enhancers
 
+#overlapping 
+EP300="ENCF433PKW.bed.gz"
+CTCF="ENCFF769UF.bed.gz"
+K562-Enhancers="K562-Enhancers.bed.gz"
+
+mv K562-Enhancers.bed.gz K562_Enhancers.bed.gz
+mv ENCF433PKW.bed.gz EP300.bed.gz
+mv ENCFF769UF.bed.gz CTCF.bed.gz
+
+
 for file in *.bed.gz
 do
 
